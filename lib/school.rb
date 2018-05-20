@@ -16,12 +16,8 @@ class School
     @roster
   end
 
-  def grade
-    @roster.detect do |x, y|
-      if x == grade
-        return y
-    end
-   end
+  def grade (grade)
+    @roster[grade]
   end
 
   def sort
